@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TS Crud API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="divContainer" class="container">
+        <h1>Manage Blog Posts via CRUD API</h1>
+        <div id="divInputURL">
+            <input type="text" id="inputURL" size="100">
+            <label for="inputURL">Input CRUD Url</label>
+            <button id="btnURL" class="btn btn-secondary">Set URL</button>
+        </div>
+        <br>
+        <div id="divBlogPost">
+            <h3>Create, Read, Update or Delete Blogpost</h3>
+            <br>
+            <button id="btnTestInput" class="btn btn-secondary">Test Input</button>
+            <br>
+            <br>
+            <input type="text" id="inputID" style="display:none">
+            <input type="text" id="inputAuthor">
+            <label for="inputAuthor">Author Name</label>
+            <br>
+            <br>
+            <input type="text" id="inputTitle">
+            <label for="inputTitle">Title</label>
+            <br>
+            <br>
+            <textarea id="inputBody"></textarea>
+            <label for="inputBody">Body</label>
+            <br>
+        </div>
+        <br>
+        <div id="divBtn">
+            <br>
+            <button id="btnPOST" class="btn btn-primary">POST</button>
+            <label for="btnPOST">POST data to Server</label>
+            <br>
+            <br>
+            <button id="btnGET" class="btn btn-primary">GET</button>
+            <label for="btnGET">GET data from Server and Displays it</label>
+            <br>
+            <br>
+            <button id="btnUPDATE" class="btn btn-primary">UPDATE</button>
+            <label for="btnUPDATE">Update current BlogPost</label>
+            <br>
+            <br>
+            <button id="btnDELETE" class="btn btn-danger">DELETE</button>
+            <label for="btnDELETE">Deletes current BlogPost</label>
+        </div>
+        <br>
+        <div id="divOutput">
+            <table id="table1" class="table"></table>
+
+        </div>
+    </div>
+    
+    <script type="module" src="./dist/main.js"></script>
+</body>
+
+</html>
